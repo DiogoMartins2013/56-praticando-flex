@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+     font-family: "Public Sans", sans-serif;
+
+}
+
+.logo .imagem{
+    width: 200px;
+} 
+
+
+html {
+    font-size: 62.5%;
+    
+
+}
+
+.conteudo-principal .paineis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    position: relative;
+}
+
+@media(max-width: 900px){
+    .conteudo-principal .paineis{
+        height: 500px;
+    }
+}
+
+.conteudo-principal .paineis .imagem-painel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
+    
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.conteudo-principal .paineis .projeto1{
+    background-image: url('../imagens/pietro..jpg');
+}
+
+.conteudo-principal .paineis .projeto2{
+    background-image: url('../imagens/painel3.jpg');
+}
+
+.conteudo-principal .paineis .projeto3{
+    background-image: url('../imagens/bone.jpg');
+}
+
+.conteudo-principal .paineis .imagem-painel.mostrar {
+    opacity: 1;
+}
+
+.conteudo-principal .paineis .titulo{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: calc(1em + 1vw);
+}
+
+.conteudo-principal .paineis .seta{
+    background-image: url('../imagens/seta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.conteudo-principal .paineis  .seta.btn-voltar{
+    left: 20px;
+    transform: rotatey(180deg);
+}
+
+.conteudo-principal .paineis  .seta.btn-avancar{
+    right: 20px;
+    
+}
+
+.quem-somos{
+    background-color: #2941AB;
+}
+
+.quem-somos .conteudo{
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+.quem-somos .conteudo .informacoes{
+    width: 50%;
+}
+
+.quem-somos .conteudo .imagem{
+    width: 50%;
+}
+
+.quem-somos .conteudo .informacoes .titulo{
+    font-size: 50px;
+    color: #1ED760;
+    margin-bottom: 20px;
+}
+
+.quem-somos .conteudo .informacoes .texto{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){
+    .quem-somos .conteudo{
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 30px;
+    }
+
+    .quem-somos .conteudo .imagem{
+        display: none;
+        
+    }
+
+    .quem-somos .conteudo .informacoes{
+       width: 100%; 
+    }
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.rodape h2{
+    font-size: 2.5rem;
+    height: 200px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.rodape h2{
+    margin: 60px 80px;
+}
+
+.rodape .redes-sociais a{
+    font-size: 2rem;
+    transition: 0.3s ease-in-out;
+    margin: 50px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    padding: 20px;
+    width: 65px;
+}
+
+.rodape .redes-sociais a:hover{
+    background-color: #1ED760;
+    color: #fff;
+}
+
+@media(max-width: 940px){
+    .rodape {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .rodape .redes-sociais{
+        width: 100%;
+        justify-content: center;
+    }
+}
